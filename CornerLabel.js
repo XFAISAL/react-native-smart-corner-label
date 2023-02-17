@@ -49,11 +49,11 @@ export default class CornerLabel extends Component {
         let labelVerticalPosition = - this._labelHeight / 2 +  originOffset
         if(props.alignment == 'left') {
             this._labelPosition = {left : labelHorizontalPosition, top: labelVerticalPosition}
-            this._labelTransform = {transform: [{rotate: '-45deg'}]}
+            this._labelTransform = {transform: [{rotate: '45deg'}]}
         }
         else {
             this._labelPosition = {right : labelHorizontalPosition, top: labelVerticalPosition}
-            this._labelTransform = {transform: [{rotate: '45deg'}]}
+            this._labelTransform = {transform: [{rotate: '-45deg'}]}
         }
 
     }
